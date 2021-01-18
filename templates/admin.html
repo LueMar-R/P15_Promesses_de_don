@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <fieldset class="fieldset2">
+        <p>  Il est {{heure}} h {{minute}} <br> Détails administrateur </p> <hr><hr>
+
+		{% for donateur in ont_donne %}
+		    {{ donateur['firstname'] }} {{ donateur['lastname'] }} <br>
+		    {{ donateur['email'] }} <br>
+		    {{ donateur['address'] }} {{ donateur['postcode'] }} {{ donateur['city'] }} {{ donateur['country'] }} <br>
+		    {{ donateur['total'] }} €
+		    <hr>
+		{% endfor %}
+        <hr>
+        <br>
+		<h2> Total  : {{ total_recolte }} € </h4>
+        </fieldset>
+    
+{% endblock %}
+

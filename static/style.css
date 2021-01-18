@@ -1,0 +1,123 @@
+body{
+    background-image: url(./fond.png);
+    background-color: #336383;
+    background-attachment: fixed;
+    font-family: "Carlito", Arial;
+    font-size: 1em;
+    color:#302535;
+    text-align: center;
+}
+
+.navbar-brand{
+    font-family: "Alef", Arial;
+    font-size: 2.3em;
+    color: #7c5a49;
+    padding-left: 1em;
+}
+
+.navbar-nav{
+    padding-left: 3em;
+    font-size: 1.1em;
+}
+
+.row{
+    margin-top: 100px;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    margin: 3em auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    background-color: #336383;
+    border:1px solid #353236;
+    font-family: "Carlito", Arial;
+    font-size: 1.4em;
+    color:#fafafa;
+}
+
+h2, h5{
+    font-size: 1.2em;
+}
+
+h3{
+    margin: 1em;
+    margin-bottom: 3em ;
+    padding: 1em;
+    background-color: #336383;
+    border:1px solid #353236;
+    font-family: "Carlito", Arial;
+    font-size: 1.4em;
+    color:#fafafa;
+}
+
+h4{
+    margin-bottom: 1.5em ;
+    font-family: "Alef", Arial;
+    font-size: 2em;
+    color:#353236;
+}
+
+span.emphase{
+    color:#d00000;
+}
+
+.container{
+    margin: 5em auto;
+}
+
+.col-sm{
+    margin: 1.2em ;
+    margin-top: 0;
+    padding: 2em;
+    padding-top: 1em;
+	background-color: #ffffffcc;
+    border-radius: 10px;
+    border:1px solid #353236;
+    text-align: center;
+}
+
+.fieldset1{
+    font-family: "Carlito", Arial;
+    font-size: 1.2em;
+}
+
+.fieldset2{
+    margin: 5em ;
+    padding: 4em;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    border:1px solid #353236;
+    font-family: "Carlito", Arial;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+label {
+    /* Pour que toutes les étiquettes aient même taille et soient correctement alignées */
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+  }
+
+.help{
+	font-family: "Carlito", Arial;
+    font-size: 0.6em;
+    color:#727272;
+}
+
+.required{
+    font-family: "Carlito", Arial;
+    font-size: 0.9em;
+    color:#403545;
+}
+
+#heure{
+    font-size: 2em;
+    color:#fafafa;
+    text-shadow: 1px 2px 2px 0 blue;
+}

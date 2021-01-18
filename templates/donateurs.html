@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Ils ont participé au Kebab de Pereg ! {% endblock %}</h1>
+        <fieldset class="fieldset2">
+        <h4>Merci à vous !</h4>
+        <hr>
+        <br>
+		{% for donateur in ont_donne %}
+		    <h2>  {{ donateur['firstname'] }} {{ donateur['lastname'] }} : {{ donateur['total'] }} €</h2>
+		    <br>
+		{% endfor %}
+        <hr>
+        <br>
+		<h4> Total récolté à ce jour : <span class="emphase">{{ total_recolte }} € </span></h4>
+        </fieldset>
+    <p id="heure">  Il est {{heure}} h {{minute}} </p>
+{% endblock %}
+

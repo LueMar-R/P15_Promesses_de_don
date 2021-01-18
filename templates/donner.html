@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Ma promesse de don {% endblock %}</h1>
+
+<div class="container">
+    <div class="row">
+
+      
+
+        <div class="col-sm">
+            <form method="post">
+            <h3>Mes coordonnées</h3>
+            <fieldset class="fieldset1">
+
+                <p id="c-email">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" name="email" id="email"/></input>
+                </p>
+                <p id="c-fname">
+                    <label for="firstname">Prénom <span class="required">*</span></label>
+                    <input type="text" name="firstname" id="firstname"/>
+                </p>
+                <p id="c-lname">
+                    <label for="lastname">Nom <span class="required">*</span></label>
+                    <input type="text" name="lastname" id="lastname"/>
+                </p>
+                <p id="c-addr">
+                    <label for="address">Adresse <span class="required">*</span></label>
+                    <input type="text" name="address" id="address"/>
+                </p>
+                <p id="c-pcode">
+                    <label for="postcode">Code postal <span class="required">*</span></label>
+                    <input type="text" name="postcode" id="postcode"/>
+                </p>
+                <p id="c-city">
+                    <label for="city">Ville <span class="required">*</span></label>
+                    <input type="text" name="city" id="city"/>
+                </p>
+                <p id="c-country">
+                    <label for="country">Pays <span class="required">*</span></label>
+                        <select name="country" id="country">
+                            <option value="DE">ALLEMAGNE</option>
+                            <option value="BE">BELGIQUE</option>
+                            <option value="FR"  selected="selected">FRANCE</option>
+                            <option value="NC">CALÉDONIE</option> 
+                            <option value="GA">GABON</option>
+                            <option value="HT">HAÏTI</option>
+                            <option value="QA">QATAR</option>
+                            <option value="TM">TURKMÉNISTAN</option>
+                            <option value="UA">UKRAINE</option>
+                        </select>
+                </p>
+                <p id="required-info"><span class="required">* Champs obligatoires (indispensables pour votre réduction fiscale)</span></p>
+
+            </fieldset>
+        </div>
+
+      
+      
+
+        <div class="col-sm">
+            <h3>Mon don</h3>
+
+            <fieldset class="fieldset1">
+                <ul class="radio-inline line" id="amount-list">
+                    <li><label><span id="value-01">10 cts</span> <input autocomplete="false" name="amount" type="radio" value=0.10 id="amount-01" /></label></li>
+                    <li><label><span id="value-02">20 cts</span> <input autocomplete="false" name="amount" type="radio" value=0.20 id="amount-02" /></label></li>
+                    <li><label><span id="value-05">50 cts</span> <input autocomplete="false" name="amount" type="radio" value=0.50 id="amount-05" /></label></li>
+                    <li><label><span id="value-1">1 €</span> <input autocomplete="false" name="amount" type="radio" value="1" id="amount-1" /></label></li>
+                    <li><label><span id="value-2">2 €</span> <input autocomplete="false" name="amount" type="radio" value="2" id="amount-2" /></label></li>
+                    <li><label><span id="value-5">5 €</span> <input autocomplete="false" name="amount" type="radio" value="5" id="amount-5" /></label></li>
+                </ul>
+
+                <p><label>Montant libre                
+                    <input autocomplete="false" name="famount" type="text" size="6" id="famount" value="0" />
+                    <span>€</span>
+                </label></p>
+
+                <p id="condition">
+                    <input type="checkbox" value="OK" name="hasagreed" id="hasagreed" /> Je reconnais avoir pris connaissance des conditions générales.
+                </p>
+
+
+                <p>
+                    <input name="btn_submit" type="submit" value="VALIDER MON DON" id="btn_submit" class="button"
+                                   data-scope='stripe'/>
+                </p>
+
+
+            </fieldset>
+        </form>
+        </div>
+
+      
+
+    </div>
+</div>
+
+{% endblock %}
